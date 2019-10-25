@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+
+
+        <!-- this is the expanded layout -->
+        <LinearLayout
+            android:id="@+id/layoutExpanded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#a0c3d7"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/buttonSimplifiedCodingExpanded"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/profile"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/buttonSimplifiedCoding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Are you sure you want to be distracted? "
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/btn_No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
